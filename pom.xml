@@ -26,6 +26,11 @@
         <jackson.version>2.18.0</jackson.version>
         <commons.version>1.3.1</commons.version>
         <commonsio.version>2.4</commonsio.version>
+        <javajwt.version>4.4.0</javajwt.version>
+        <mybatisspring.version>3.0.4</mybatisspring.version>
+        <mybatis.version>3.5.13</mybatis.version>
+        <mysql.version>8.3.0</mysql.version>
+        <springjdbc.version>6.1.1</springjdbc.version>
     </properties>
 
     <dependencyManagement>
@@ -62,6 +67,33 @@
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commonsio.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.auth0</groupId>
+                <artifactId>java-jwt</artifactId>
+                <version>${javajwt.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatisspring.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${springjdbc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
